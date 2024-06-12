@@ -11,7 +11,6 @@ namespace WinFormsApp2.Models
 {
     public class PawnShop
     {
-        [JsonInclude]
         public List<ClientProductPair> ClientProductPairs { get; set; }
 
         public PawnShop()

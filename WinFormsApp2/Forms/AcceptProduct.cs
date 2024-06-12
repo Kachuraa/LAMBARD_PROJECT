@@ -35,11 +35,6 @@ namespace WinFormsApp2.Forms
         private void btnAdd_Click(object sender, EventArgs e)
         {
             NewClient = new Client(textBoxName.Text, textBoxSurname.Text, textBoxContactInfo.Text);
-            NewProduct = new Product(textBoxProductName.Text,
-                                      decimal.Parse(textBoxEstimatedValue.Text),
-                                      decimal.Parse(textBoxPawnValue.Text),
-                                      DateTime.Parse(textBoxDateReceived.Text),
-                                      int.Parse(textBoxStoragePeriod.Text));
             DialogResult = DialogResult.OK;
             Close();
         }
