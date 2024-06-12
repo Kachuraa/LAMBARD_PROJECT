@@ -13,9 +13,6 @@ namespace WinFormsApp2.Models
         public decimal PawnValue { get; }
         public DateTime DateReceived { get; }
         public int StoragePeriod { get; }
-        public object Status { get; internal set; }
-        public decimal Price { get; set; }
-        public DateTime ExpiryDate { get; set; }
 
         public Product(string name, decimal estimatedValue, decimal pawnValue, DateTime dateReceived, int storagePeriod, decimal price, DateTime expiryDate)
         {
@@ -24,8 +21,6 @@ namespace WinFormsApp2.Models
             PawnValue = pawnValue;
             DateReceived = dateReceived;
             StoragePeriod = storagePeriod;
-            Price = price;
-            ExpiryDate = expiryDate;
         }
 
         public override string ToString()
