@@ -16,6 +16,7 @@ namespace WinFormsApp2.Models
         public PawnShop()
         {
             ClientProductPairs = new List<ClientProductPair>();
+            
         }
 
         public void AddClientProductPair(Client client, Product product)
@@ -32,19 +33,23 @@ namespace WinFormsApp2.Models
 
         public void SaveData()
         {
-            var jsonString = JsonSerializer.Serialize(this, new JsonSerializerOptions { WriteIndented = true });
+            var jsonString = JsonSerializer.Serialize(this);
             File.WriteAllText(FileName, jsonString);
         }
 
         public static PawnShop? LoadData()
         {
-            if (!File.Exists(FileName))
+            if (File.Exists(FileName))
             {
-                return new PawnShop();
+                var jsonString = File.ReadAllText(FileName);
+                return JsonSerializer.Deserialize<PawnShop>(jsonString);
             }
+            return null;
+        }
 
-            var jsonString = File.ReadAllText(FileName);
-            return JsonSerializer.Deserialize<PawnShop>(jsonString);
+        internal void RemoveClientProductPair(Product selectedProduct)
+        {
+            throw new NotImplementedException();
         }
     }
 }
