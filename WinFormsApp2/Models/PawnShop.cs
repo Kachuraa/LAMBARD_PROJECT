@@ -16,7 +16,6 @@ namespace WinFormsApp2.Models
         public PawnShop()
         {
             ClientProductPairs = new List<ClientProductPair>();
-            
         }
 
         public void AddClientProductPair(Client client, Product product)
