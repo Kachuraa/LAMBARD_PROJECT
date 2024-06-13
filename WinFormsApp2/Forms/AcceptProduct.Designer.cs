@@ -40,9 +40,7 @@
             labelEstimatedValue = new Label();
             textBoxPawnValue = new TextBox();
             labelPawnValue = new Label();
-            textBoxDateReceived = new TextBox();
             labelDateReceived = new Label();
-            textBoxStoragePeriod = new TextBox();
             labelStoragePeriod = new Label();
             btnAdd = new Button();
             btnCancel = new Button();
@@ -158,14 +156,6 @@
             labelPawnValue.TabIndex = 11;
             labelPawnValue.Text = "Сума під заставу:";
             // 
-            // textBoxDateReceived
-            // 
-            textBoxDateReceived.Location = new Point(351, 309);
-            textBoxDateReceived.Margin = new Padding(5);
-            textBoxDateReceived.Name = "textBoxDateReceived";
-            textBoxDateReceived.Size = new Size(241, 39);
-            textBoxDateReceived.TabIndex = 12;
-            // 
             // labelDateReceived
             // 
             labelDateReceived.AutoSize = true;
@@ -175,14 +165,6 @@
             labelDateReceived.Size = new Size(133, 32);
             labelDateReceived.TabIndex = 13;
             labelDateReceived.Text = "Дата здачі:";
-            // 
-            // textBoxStoragePeriod
-            // 
-            textBoxStoragePeriod.Location = new Point(351, 357);
-            textBoxStoragePeriod.Margin = new Padding(5);
-            textBoxStoragePeriod.Name = "textBoxStoragePeriod";
-            textBoxStoragePeriod.Size = new Size(241, 39);
-            textBoxStoragePeriod.TabIndex = 14;
             // 
             // labelStoragePeriod
             // 
@@ -223,9 +205,7 @@
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(btnCancel);
             panel1.Controls.Add(btnAdd);
-            panel1.Controls.Add(textBoxStoragePeriod);
             panel1.Controls.Add(labelStoragePeriod);
-            panel1.Controls.Add(textBoxDateReceived);
             panel1.Controls.Add(labelDateReceived);
             panel1.Controls.Add(textBoxPawnValue);
             panel1.Controls.Add(labelPawnValue);
@@ -271,9 +251,7 @@
         private System.Windows.Forms.Label labelEstimatedValue;
         private System.Windows.Forms.TextBox textBoxPawnValue;
         private System.Windows.Forms.Label labelPawnValue;
-        private System.Windows.Forms.TextBox textBoxDateReceived;
         private System.Windows.Forms.Label labelDateReceived;
-        private System.Windows.Forms.TextBox textBoxStoragePeriod;
         private System.Windows.Forms.Label labelStoragePeriod;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
